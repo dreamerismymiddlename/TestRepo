@@ -1,0 +1,33 @@
+package Wczytywanie;
+
+import java.util.HashMap;
+import java.util.Random;
+
+public class Hashs {
+
+	public static void main(String[] args) {
+		HashMap<Integer, String> relation= new HashMap<Integer, String>();
+		relation.put(1, "Boss and employee");
+		relation.put(2, "Husband and Wife");
+		relation.put(3, "Elderly mother and son");
+		relation.put(4, "A woman and her secret lover");
+		relation.put(5, "Man and an escort");
+		relation.put(6, "Sister/Brother ");
+		relation.put(7, "Newlyweds");
+		relation.put(8, "Ex's");
+		relation.put(9, "Friends who have not seen each other for 6 months ");
+		relation.put(10, "Competitors");
+		relation.put(11, "Work coligues");
+		relation.put(12, "Teacher and student");
+		relation.put(13, "HR person and person applying for a job");
+		relation.put(14, "Pregnant lady and a nurse");
+		relation.put(15, "doctor and patient");
+		
+		 Random rand = new Random();
+		    int  n = rand.nextInt(15);
+		
+		    System.out.println(n);
+		  System.out.println("Your relationship is "+ ( relation.get(n)));
+	}
+
+}
