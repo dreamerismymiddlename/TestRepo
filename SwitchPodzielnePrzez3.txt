@@ -1,0 +1,28 @@
+package losowanie;
+
+public class cwiczenieSwitch {
+public cwiczenieSwitch(int i) {
+		// TODO Auto-generated constructor stub
+	}
+public void testujemy(int x) { 
+switch(x%3) {
+case 0:
+	System.out.println("Podzielne przez 3");
+	break;
+case 1 :
+	System.out.println("niepodzielneprzez 3");
+	break;
+case 2:
+System.out.println("niepodzielneprzez 3");
+	break;
+default:
+	System.out.println("Niepodzielne przez 3");
+
+}}
+public class testujemyswitch{
+	public void main(String[] args) {
+cwiczenieSwitch sww=new cwiczenieSwitch(4);
+sww.testujemy(3);
+
+	}
+}}
