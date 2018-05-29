@@ -1,0 +1,28 @@
+package losowanie;
+
+public class Lift {
+
+
+	
+
+public void callLift(int yourFloor,int liftA,int liftB) {
+	if(yourFloor==liftA) {
+	System.out.println("Winda A stoi na Twoim piêtrze");
+	}else if(yourFloor==liftB) {
+		System.out.println("Winda B stoi na Twoim piêtrze");
+	}else if((liftB -yourFloor)>=(liftA-yourFloor)) {
+		liftA=yourFloor;
+		System.out.println("Winda A jedzie do Ciebie teraz");
+	}else {
+		liftB=yourFloor;
+		System.out.println("winda B jedzie do Ciebie");
+	}
+	}
+public static void main(String[] args) {
+	// TODO Auto-generated method stub
+
+
+Lift ksiezyc=new Lift();
+ksiezyc.callLift(3,5,4);
+
+}}
