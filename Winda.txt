@@ -2,14 +2,15 @@ package losowanie;
 
 public class Lift {
 
-
+// Wybieerz piętro na którym jesteś , winde A i B na którym są i zobacz
+//która przyjedzie
 	
 
 public void callLift(int yourFloor,int liftA,int liftB) {
 	if(yourFloor==liftA) {
-	System.out.println("Winda A stoi na Twoim pi�trze");
+	System.out.println("Winda A stoi na Twoim piętrze");
 	}else if(yourFloor==liftB) {
-		System.out.println("Winda B stoi na Twoim pi�trze");
+		System.out.println("Winda B stoi na Twoim piętrze");
 	}else if((liftB -yourFloor)>=(liftA-yourFloor)) {
 		liftA=yourFloor;
 		System.out.println("Winda A jedzie do Ciebie teraz");
@@ -19,10 +20,11 @@ public void callLift(int yourFloor,int liftA,int liftB) {
 	}
 	}
 public static void main(String[] args) {
-	// TODO Auto-generated method stub
+	// ksiezyc to nasz nowy obiekt winda na Ksiezycowej
 
 
 Lift ksiezyc=new Lift();
+//wzywam winde bedac na 3 pietrze , winda A jest na 5, B na 4 tym piętrze
 ksiezyc.callLift(3,5,4);
 
 }}
