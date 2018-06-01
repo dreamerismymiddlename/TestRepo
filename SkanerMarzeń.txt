@@ -1,0 +1,18 @@
+package losowanie;
+import java.util.Scanner;
+
+public class Skan {
+
+	private static Scanner input;
+
+	public static void main(String[] args) {
+		input = new Scanner(System.in);
+		System.out.println("O czym najbardiej marzysz?");
+		String marzenie= input.nextLine();
+		System.out.println("W tym roku "+marzenie+" sie wydarzy");
+		System.out.println("Jak Bardzo teo pragniesz w skali 0 do 100");
+		int gradacja= input.nextInt();
+		System.out.println("postaraj siê na "+gradacja+" procent");
+	}
+
+}
